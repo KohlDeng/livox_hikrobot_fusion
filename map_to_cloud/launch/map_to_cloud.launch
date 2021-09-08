@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<launch>
+	<param name="intrinsic_path" value="$(find map_to_cloud)/../../data/parameters/intrinsic.txt"/>
+	<param name="extrinsic_path" value="$(find map_to_cloud)/../../data/parameters/extrinsic.txt"/>
+
+	<node pkg="map_to_cloud" type="map_to_cloud" name="image_depth_node" output="screen"/>
+
+
+
+</launch>
